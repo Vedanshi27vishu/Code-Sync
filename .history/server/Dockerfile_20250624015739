@@ -14,7 +14,7 @@ COPY . .
 RUN npm run build
 RUN npm prune --omit=dev
 
-# Stage 2: Copy only the `dist`     folder
+# Stage 2: Copy only the `dist` folder
 FROM node:18-alpine AS runner
 
 WORKDIR /app
